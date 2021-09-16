@@ -3,6 +3,7 @@ import { performance } from "perf_hooks";
 import * as fs from "fs-extra";
 import Event from "@util/events";
 import path from "path";
+import { GatewayServer, SlashCreator } from 'slash-create';
 
 export default class Lockbox extends Eris.Client {
     constructor(token: string) {
@@ -12,6 +13,7 @@ export default class Lockbox extends Eris.Client {
     async launch() {
         await this.loadEvents();
         // await this.loadCommands();
+	await this.connect();
     }
     
     async loadEvents() {
@@ -23,10 +25,20 @@ export default class Lockbox extends Eris.Client {
             if ("default" in event) event = event.default;
             this.on(event.name, event.listener.bind(this));
 			const end = performance.now();
-            console.log(`Loaded event ${event.name}, in ${(end - start).toFixed(3)}ms.`)
+            console.log(`Loaded Event ${event.name}, in ${(end - start).toFixed(3)}ms.`)
         }
         const oEnd = performance.now();
-        console.log(`Loaded ${list.length}, in ${(oEnd - oStart).toFixed(3)}ms.`)
+        console.log(`Loaded ${list.length} Event(s), in ${(oEnd - oStart).toFixed(3)}ms.`)
     }
 
+    async loadCommands() {
+        const creator = new SlashCreator({
+            applicationID: process.env.APPLICATION_ID!,
+            token: process.env.TOKEN!,
+        })
+        creator.withServer(new GatewayServer((handler) => this.on('interactionCreate', handler))).registerCommandsIn(path.join(__dirname, 'commands')).syncGlobalCommands();
+        creator.on('synced', () => {
+            console.log('Finished syncing Commands!');
+        })
+    }
 }

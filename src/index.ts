@@ -1,6 +1,13 @@
-import './util/MonkeyPatch'
+import './util/MonkeyPatch';
 import Lockbox from "./main";
+import * as dotenv from 'dotenv';
 
-const bot = new Lockbox('ODg3NzAyNzQ1Mjc5MjU4Njk1.YUH_mw.NuWk5rOkaazulIzEEtpfTDZoF18')
+dotenv.config()
+
+const bot = new Lockbox(`${process.env['TOKEN']}`)
 
 bot.launch();
+
+export {
+  bot
+}
