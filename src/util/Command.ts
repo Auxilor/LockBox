@@ -1,6 +1,6 @@
 import { Command, SlashCommandOptions, SlashCreator } from 'slash-create';
 import Lockbox from '@Lockbox';
-import { bot } from 'index';
+import { bot } from '@root/src/index';
 
 interface LockBoxSlashCommandOptions extends SlashCommandOptions {
 	helpText?: string;

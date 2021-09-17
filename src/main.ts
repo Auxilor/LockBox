@@ -7,12 +7,14 @@ import { GatewayServer, SlashCreator } from 'slash-create';
 
 export default class Lockbox extends Eris.Client {
     constructor(token: string) {
-        super(token, {} as ClientOptions);
+        super(token, {
+            restMode: true
+        } as ClientOptions);
     }
 
     async launch() {
         await this.loadEvents();
-        // await this.loadCommands();
+        await this.loadCommands();
 	await this.connect();
     }
     
@@ -36,9 +38,21 @@ export default class Lockbox extends Eris.Client {
             applicationID: process.env.APPLICATION_ID!,
             token: process.env.TOKEN!,
         })
-        creator.withServer(new GatewayServer((handler) => this.on('interactionCreate', handler))).registerCommandsIn(path.join(__dirname, 'commands')).syncGlobalCommands();
+        creator.withServer(new GatewayServer(
+            (handler) => this.on('rawWS', (event) => {
+                //@ts-ignore
+                if (event.t === 'INTERACTION_CREATE') handler(event.d);
+            })
+        )).registerCommandsIn(path.join(__dirname, 'commands')).syncGlobalCommands();
         creator.on('synced', () => {
             console.log('Finished syncing Commands!');
         })
+        creator.on('debug', (msg) => console.log(`[DEBUG]: ${msg}`));
+        creator.on('warn', (msg) => console.warn(`[WARN]: ${msg}`));
+        creator.on('error', (msg) => console.error(`[ERROR]: ${msg}`));
+        creator.on('commandRun', (cmd, _, ctx) => console.log(`${ctx.member!.user.username}#${ctx.member!.user.discriminator} (${ctx.member!.id}) ran command ${cmd.commandName}`));
+        creator.on('commandRegister', (cmd) => console.log(`Registered command ${cmd.commandName}`));
+        creator.on('commandError', (cmd, error) => console.error(`Command ${cmd.commandName}: ${error}`));
+        creator.on('commandBlock', (cmd, ctx, reason) => console.log(`Command ${cmd.commandName} was blocked for ${ctx.member!.user.username}#${ctx.member!.user.discriminator}. Reason: ${reason}`));
     }
 }
