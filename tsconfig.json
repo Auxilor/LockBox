@@ -6,6 +6,9 @@
       "strictPropertyInitialization": false,
       "skipLibCheck": true,
       "inlineSourceMap": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
       "paths": {
         "@root/*": [
           "../*"
@@ -15,6 +18,9 @@
         ],
         "@Lockbox": [
           "main.ts"
+        ],
+        "@models/*": [
+          "models/*"
         ]
       },
     },

@@ -8,4 +8,5 @@ moduleAlias.addAliases({
 	"@root": d,
 	"@util": `${d}/src/util`,
 	"@Lockbox": `${d}/src/main`,
+	"@models": `${d}/src/models`,
 });

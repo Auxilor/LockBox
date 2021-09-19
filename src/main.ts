@@ -15,7 +15,7 @@ export default class Lockbox extends Eris.Client {
     async launch() {
         await this.loadEvents();
         await this.loadCommands();
-	await this.connect();
+        await this.connect();
     }
     
     async loadEvents() {
@@ -44,6 +44,7 @@ export default class Lockbox extends Eris.Client {
                 if (event.t === 'INTERACTION_CREATE') handler(event.d);
             })
         )).registerCommandsIn(path.join(__dirname, 'commands')).syncGlobalCommands();
+        creator.syncCommandPermissions()
         creator.on('synced', () => {
             console.log('Finished syncing Commands!');
         })
@@ -52,6 +53,8 @@ export default class Lockbox extends Eris.Client {
         creator.on('error', (msg) => console.error(`[ERROR]: ${msg}`));
         creator.on('commandRun', (cmd, _, ctx) => console.log(`${ctx.member!.user.username}#${ctx.member!.user.discriminator} (${ctx.member!.id}) ran command ${cmd.commandName}`));
         creator.on('commandRegister', (cmd) => console.log(`Registered command ${cmd.commandName}`));
+        creator.on('commandUnregister', (cmd) => console.log(`Unregistered command ${cmd.commandName}`));
+        creator.on('commandReregister', (cmd) => console.log(`Reregistered command ${cmd.commandName}`));
         creator.on('commandError', (cmd, error) => console.error(`Command ${cmd.commandName}: ${error}`));
         creator.on('commandBlock', (cmd, ctx, reason) => console.log(`Command ${cmd.commandName} was blocked for ${ctx.member!.user.username}#${ctx.member!.user.discriminator}. Reason: ${reason}`));
     }
