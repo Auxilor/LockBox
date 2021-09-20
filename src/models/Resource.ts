@@ -1,5 +1,5 @@
 import { BaseEntity, Column, Entity, ManyToOne, PrimaryColumn } from 'typeorm'
-import { Config } from '@models/Config'
+import { Config } from './Config'
 
 @Entity()
 export class Resource extends BaseEntity {

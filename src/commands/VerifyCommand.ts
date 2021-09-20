@@ -3,8 +3,8 @@ import { bot, verifyURL } from '@root/src/index';
 import Command from '@util/Command';
 import API from '@util/API';
 import Database from '@util/Database';
-import { User } from '@models/User';
-import { Config } from '@models/Config';
+import { User } from '../models/User';
+import { Config } from '../models/Config';
 
 export class PingCommand extends Command {
 	constructor(creator: SlashCreator) {
@@ -65,30 +65,35 @@ export class PingCommand extends Command {
         const member = bot.users.get(ctx.user.id)
         let validResources = 0
 
+        console.log(user)
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
         if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
-
-        for (const resource of userData.resources) {
-            if (resource.purchaseValid && resource.purchaseStatus !== 'Free') {
-                validResources++
-
-                const resourceConfig = resources.find(r => r.Id === resource.id)
-                if (resourceConfig) {
-                    try {
-                        await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
-                    } catch (e) {
-                        console.error(e)
-                        //@ts-ignore
-                        if (e.message === 'Missing Permissions')
-                        //@ts-ignore
-                        e.message += ' - The Bot role needs to be above whatever roles you want the bot to manage.'
-                        
-                        //@ts-ignore
-                        return { content: e.message, ephemeral: true }
-                    }
-                }
-            }
+        if (userData) console.log(userData)
+        return {
+            content: 'yepcock!',
+            ephemeral: true
         }
+        // for (const resource of userData.resources) {
+        //     if (resource.purchaseValid && resource.purchaseStatus !== 'Free') {
+        //         validResources++
+
+        //         const resourceConfig = resources.find(r => r.Id === resource.id)
+        //         if (resourceConfig) {
+        //             try {
+        //                 await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
+        //             } catch (e) {
+        //                 console.error(e)
+        //                 //@ts-ignore
+        //                 if (e.message === 'Missing Permissions')
+        //                 //@ts-ignore
+        //                 e.message += ' - The Bot role needs to be above whatever roles you want the bot to manage.'
+                        
+        //                 //@ts-ignore
+        //                 return { content: e.message, ephemeral: true }
+        //             }
+        //         }
+        //     }
+        // }
 	}
 
 }

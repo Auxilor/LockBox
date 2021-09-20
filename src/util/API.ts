@@ -52,7 +52,7 @@ export default class API {
     } 
 
     public static getUserData = async (user_id: string, api_key: string): NonNullable<Promise<getUserDataResponse | null>> => {
-        const fullres = await req(`${this.BASE_URL}/v1/getUserData`).query({
+        const fullres = await req(`${this.BASE_URL}/v1/getUserData`, 'POST').body({
             api_key,
             user_id
         }).json<getUserData>()

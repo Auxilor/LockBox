@@ -1,6 +1,9 @@
 {
     "extends": "@smol-code/tsconfig",
     "compilerOptions": {
+      "lib": [
+        "ES6"
+      ],
       "outDir": "./build",
       "baseUrl": "./src",
       "strictPropertyInitialization": false,
