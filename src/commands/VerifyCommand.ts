@@ -68,32 +68,32 @@ export class PingCommand extends Command {
         console.log(user)
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
         if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
-        if (userData) console.log(userData)
-        return {
-            content: 'yepcock!',
-            ephemeral: true
-        }
-        // for (const resource of userData.resources) {
-        //     if (resource.purchaseValid && resource.purchaseStatus !== 'Free') {
-        //         validResources++
+        for (const resource of userData.resources) {
+            if (resource.purchaseValid && resource.purchaseStatus !== 'Free') {
+                validResources++
 
-        //         const resourceConfig = resources.find(r => r.Id === resource.id)
-        //         if (resourceConfig) {
-        //             try {
-        //                 await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
-        //             } catch (e) {
-        //                 console.error(e)
-        //                 //@ts-ignore
-        //                 if (e.message === 'Missing Permissions')
-        //                 //@ts-ignore
-        //                 e.message += ' - The Bot role needs to be above whatever roles you want the bot to manage.'
+                const resourceConfig = resources.find(r => r.Id === resource.id)
+                if (resourceConfig) {
+                    try {
+                        await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
+                    } catch (e) {
+                        console.error(e)
+                        //@ts-ignore
+                        if (e.message === 'Missing Permissions')
+                        //@ts-ignore
+                        e.message += ' - The Bot role needs to be above whatever roles you want the bot to manage.'
                         
-        //                 //@ts-ignore
-        //                 return { content: e.message, ephemeral: true }
-        //             }
-        //         }
-        //     }
-        // }
+                        //@ts-ignore
+                        return { content: e.message, ephemeral: true }
+                    }
+                } else {
+                    return {
+                        content: 'No Valid resources!',
+                        ephemeral: true
+                    }
+                }
+            }
+        }
 	}
 
 }

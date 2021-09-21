@@ -64,6 +64,19 @@ export default class API {
 
         return null
     }
+    //@ts-ignore
+    public static async getResourceInfo(resource_id: number, api_key: string): Promise<ResourceInfo> {
+        const fullres = await req(`${this.BASE_URL}/v1/getResourceInfo`).body({
+            api_key,
+            resource_id,
+        }).json<getResourceInfo>()
+        let {response: res} = fullres
+
+        if(res.success) return res.resource;
+
+
+        this.checkErrors(fullres)
+    }
 
     private static checkErrors(response: any) {
         console.log(response)
