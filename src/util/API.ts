@@ -6,7 +6,7 @@ export default class API {
     static readonly NONCE = cryptoRandomString({length: 10});
     private static service = 'AuxilorVerification';
 
-    public static generateUserVerifyURL = async (): NonNullable<Promise<string | null>> => {
+    public static generateUserVerifyURL = async (): Promise<string | null> => {
         const fullres = await req(`${this.BASE_URL}/v1/generateUserVerifyURL`).query({
             service: this.service,
             nonce: this.NONCE
@@ -20,7 +20,7 @@ export default class API {
         return null
     }
 
-    public static verifyUser = async (token: string): NonNullable<Promise<string | null>> => {
+    public static verifyUser = async (token: string): Promise<string | null> => {
 
         const fullres = await req(`${this.BASE_URL}/v1/verifyUser`).query({
             service: this.service,
@@ -36,7 +36,7 @@ export default class API {
         return null
     }
 
-    public static getResourceUserData = async (resource_id: string | number, user_id: number, api_key: string): NonNullable<Promise<ResourceUserData | null>> => {
+    public static getResourceUserData = async (resource_id: string | number, user_id: number, api_key: string): Promise<ResourceUserData | null> => {
         const fullres = await req(`${this.BASE_URL}/v1/getResourceUserData`).query({
             api_key,
             resource_id,
@@ -51,7 +51,7 @@ export default class API {
         return null
     } 
 
-    public static getUserData = async (user_id: string, api_key: string): NonNullable<Promise<getUserDataResponse | null>> => {
+    public static getUserData = async (user_id: string, api_key: string): Promise<getUserDataResponse | null> => {
         const fullres = await req(`${this.BASE_URL}/v1/getUserData`, 'POST').body({
             api_key,
             user_id

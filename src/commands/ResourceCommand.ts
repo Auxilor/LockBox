@@ -61,7 +61,7 @@ export class ResourceCommand extends Command {
                 console.log(config)
                 let response: ResourceInfo;
                 if (typeof ctx.options[key]['resourceid'] !== 'undefined') {
-                    response = await API.getResourceInfo(ctx.options[key]['resourceid'], config.apiKey)
+                    response = (await API.getResourceInfo(ctx.options[key]['resourceid'], config.apiKey))!
                     
                     if (response === null) return { content: 'Resource not found!', ephemeral: true }
                 }
@@ -73,7 +73,7 @@ export class ResourceCommand extends Command {
                 * Variable 'response' is used before being assigned.ts(2454)
                 */
                 
-                const pain = await API.getResourceInfo(ctx.options[key]['resourceid'], config.apiKey);
+                const pain = (await API.getResourceInfo(ctx.options[key]['resourceid'], config.apiKey))!;
                 
                 //#endregion
                 const resources = await config.resources
