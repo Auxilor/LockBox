@@ -58,7 +58,7 @@ export class ResourceCommand extends Command {
         
         switch (key) {
             case 'config':
-                console.log(config.resources)
+                console.log(config)
                 let response: ResourceInfo;
                 if (typeof ctx.options[key]['resourceid'] !== 'undefined') {
                     response = await API.getResourceInfo(ctx.options[key]['resourceid'], config.apiKey)
@@ -88,7 +88,6 @@ export class ResourceCommand extends Command {
                 }
 
                 config.resources = Promise.resolve(resources)
-                console.log(config)
                 await config.save()
                 return {
                     content: response!.title + ' role updated to <@&' + ctx.options[key]['role'] + '>',

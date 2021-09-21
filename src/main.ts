@@ -3,7 +3,7 @@ import { performance } from "perf_hooks";
 import * as fs from "fs-extra";
 import Event from "@util/events";
 import path from "path";
-import { GatewayServer, SlashCreator } from 'slash-create';
+import { AnyRequestData, GatewayServer, SlashCreator } from 'slash-create';
 
 export default class Lockbox extends Eris.Client {
     constructor(token: string) {
@@ -40,8 +40,7 @@ export default class Lockbox extends Eris.Client {
         })
         creator.withServer(new GatewayServer(
             (handler) => this.on('rawWS', (event) => {
-                //@ts-ignore
-                if (event.t === 'INTERACTION_CREATE') handler(event.d);
+                if (event.t === 'INTERACTION_CREATE') handler(event.d as AnyRequestData);
             })
         )).registerCommandsIn(path.join(__dirname, 'commands')).syncGlobalCommands();
 

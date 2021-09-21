@@ -78,13 +78,7 @@ export class PingCommand extends Command {
                         await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
                     } catch (e) {
                         console.error(e)
-                        //@ts-ignore
-                        if (e.message === 'Missing Permissions')
-                        //@ts-ignore
-                        e.message += ' - The Bot role needs to be above whatever roles you want the bot to manage.'
-                        
-                        //@ts-ignore
-                        return { content: e.message, ephemeral: true }
+                        return { content: 'Failed to add roles', ephemeral: true }
                     }
                 } else {
                     return {

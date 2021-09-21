@@ -25,6 +25,6 @@ export class Resource extends BaseEntity {
         createForeignKeyConstraints: false,
         primary: true
     })
-    guild: Config
+    guild?: Config
 
 }

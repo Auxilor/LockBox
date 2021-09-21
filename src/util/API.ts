@@ -64,8 +64,7 @@ export default class API {
 
         return null
     }
-    //@ts-ignore
-    public static async getResourceInfo(resource_id: number, api_key: string): Promise<ResourceInfo> {
+    public static async getResourceInfo(resource_id: number, api_key: string): Promise<ResourceInfo | undefined> {
         const fullres = await req(`${this.BASE_URL}/v1/getResourceInfo`).body({
             api_key,
             resource_id,
