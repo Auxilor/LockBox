@@ -5,6 +5,7 @@ import API from '@util/API';
 import Database from '@util/Database';
 import { User } from '../models/User';
 import { Config } from '../models/Config';
+import Logger from '@util/Logger';
 
 export class PingCommand extends Command {
 	constructor(creator: SlashCreator) {
@@ -62,10 +63,11 @@ export class PingCommand extends Command {
             await user.save()
         }
 
-        const member = bot.users.get(ctx.user.id)
+        const member = await bot.getMember(ctx.guildID!, ctx.user.id)
+        Logger.info(member)
+        Logger.info(bot.users.entries())
         let validResources = 0
 
-        console.log(user)
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
         if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
         for (const resource of userData.resources) {
@@ -77,7 +79,7 @@ export class PingCommand extends Command {
                     try {
                         await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
                     } catch (e) {
-                        console.error(e)
+                        Logger.error(e)
                         return { content: 'Failed to add roles', ephemeral: true }
                     }
                 } else {

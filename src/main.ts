@@ -4,10 +4,12 @@ import * as fs from "fs-extra";
 import Event from "@util/events";
 import path from "path";
 import { AnyRequestData, GatewayServer, SlashCreator } from 'slash-create';
+import Logger from "@util/Logger";
 
 export default class Lockbox extends Eris.Client {
     constructor(token: string) {
         super(token, {
+            getAllUsers: true,
             restMode: true
         } as ClientOptions);
     }
@@ -27,10 +29,10 @@ export default class Lockbox extends Eris.Client {
             if ("default" in event) event = event.default;
             this.on(event.name, event.listener.bind(this));
 			const end = performance.now();
-            console.log(`Loaded Event ${event.name}, in ${(end - start).toFixed(3)}ms.`)
+            Logger.debug(`Loaded Event ${event.name}, in ${(end - start).toFixed(3)}ms.`)
         }
         const oEnd = performance.now();
-        console.log(`Loaded ${list.length} Event(s), in ${(oEnd - oStart).toFixed(3)}ms.`)
+        Logger.debug(`Loaded ${list.length} Event(s), in ${(oEnd - oStart).toFixed(3)}ms.`)
     }
 
     async loadCommands() {
@@ -48,18 +50,36 @@ export default class Lockbox extends Eris.Client {
 
         creator.syncCommandPermissions()
         creator.on('synced', () => {
-            console.log('Finished syncing Commands!');
+            Logger.info('Finished syncing Commands!');
         })
-        creator.on('debug', (msg) => console.log(`[DEBUG]: ${msg}`));
-        creator.on('warn', (msg) => console.warn(`[WARN]: ${msg}`));
-        creator.on('error', (msg) => console.error(`[ERROR]: ${msg}`));
-        creator.on('commandRun', (cmd, _, ctx) => console.log(`${ctx.member!.user.username}#${ctx.member!.user.discriminator} (${ctx.member!.id}) ran command ${cmd.commandName}`));
-        creator.on('commandRegister', (cmd) => console.log(`Registered command ${cmd.commandName}`));
-        creator.on('commandUnregister', (cmd) => console.log(`Unregistered command ${cmd.commandName}`));
-        creator.on('commandReregister', (cmd) => console.log(`Reregistered command ${cmd.commandName}`));
-        creator.on('commandError', (cmd, error) => console.error(`Command ${cmd.commandName}: ${
+        creator.on('debug', (msg) => Logger.debug(`[DEBUG]: ${msg}`));
+        creator.on('warn', (msg) => Logger.warn(`[WARN]: ${msg}`));
+        creator.on('error', (msg) => Logger.error(`[ERROR]: ${msg}`));
+        creator.on('commandRun', (cmd, _, ctx) => Logger.info(`${ctx.member!.user.username}#${ctx.member!.user.discriminator} (${ctx.member!.id}) ran command ${cmd.commandName}`));
+        creator.on('commandRegister', (cmd) => Logger.debug(`Registered command ${cmd.commandName}`));
+        creator.on('commandUnregister', (cmd) => Logger.warn(`Unregistered command ${cmd.commandName}`));
+        creator.on('commandReregister', (cmd) => Logger.debug(`Reregistered command ${cmd.commandName}`));
+        creator.on('commandError', (cmd, error) => Logger.error(`Command ${cmd.commandName}: ${
             error.stack ? error.message + '\n' + error.stack : error.message 
         }`));
-        creator.on('commandBlock', (cmd, ctx, reason) => console.log(`Command ${cmd.commandName} was blocked for ${ctx.member!.user.username}#${ctx.member!.user.discriminator}. Reason: ${reason}`));
+        creator.on('commandBlock', (cmd, ctx, reason) => Logger.warn(`Command ${cmd.commandName} was blocked for ${ctx.member!.user.username}#${ctx.member!.user.discriminator}. Reason: ${reason}`));
     }
+
+    async getMember(guildId: string, userId: string, forceRest = false) {
+		if (!this.guilds.has(guildId)) return this.getRESTGuildMember(guildId, userId).catch(() => null);
+		else {
+			const g = this.guilds.get(guildId)!;
+			const cur = g.members.get(userId);
+			if (cur && forceRest === false) return cur;
+			else {
+				const m = await g.getRESTMember(userId).catch(() => null);
+				if (m !== null) {
+					// if (force && cur) g.members.remove(cur);
+					g.members.add(m, g);
+					return m;
+				} else return null;
+			}
+		}
+	}
+
 }

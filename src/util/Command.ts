@@ -1,6 +1,7 @@
 import { Command, SlashCommandOptions, SlashCreator } from 'slash-create';
 import Lockbox from '@Lockbox';
 import { bot } from '@root/src/index';
+import Logger from './Logger';
 
 interface LockBoxSlashCommandOptions extends SlashCommandOptions {
 	helpText?: string;
@@ -18,6 +19,6 @@ export default class BaseCommand extends Command {
 		this.helpText = opts.helpText ?? 'No Help Available';
 
 		this.client = bot;
-		this.log = console.log;
+		this.log = Logger.info;
 	}
 }

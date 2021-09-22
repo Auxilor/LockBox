@@ -1,9 +1,7 @@
 {
     "extends": "@smol-code/tsconfig",
     "compilerOptions": {
-      "lib": [
-        "ES6"
-      ],
+      "target": "ES2018",
       "outDir": "./build",
       "baseUrl": "./src",
       "strictPropertyInitialization": false,

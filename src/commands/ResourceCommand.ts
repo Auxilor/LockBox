@@ -30,12 +30,6 @@ export class ResourceCommand extends Command {
                             type: CommandOptionType.ROLE,
                         },
                     ]
-                },
-                {
-                    name: 'list',
-                    description: 'list all set Resources set.',
-                    type: CommandOptionType.BOOLEAN,
-                    required: false
                 }
             ]
         })
@@ -58,7 +52,6 @@ export class ResourceCommand extends Command {
         
         switch (key) {
             case 'config':
-                console.log(config)
                 let response: ResourceInfo;
                 if (typeof ctx.options[key]['resourceid'] !== 'undefined') {
                     response = (await API.getResourceInfo(ctx.options[key]['resourceid'], config.apiKey))!
@@ -67,7 +60,6 @@ export class ResourceCommand extends Command {
                 }
 
                 //#region
-
                 //@Jpuf0
                 /*
                 * Variable 'response' is used before being assigned.ts(2454)
@@ -79,11 +71,9 @@ export class ResourceCommand extends Command {
                 const resources = await config.resources
                 const resource = resources.find(r => r.Id === response.id)
                 
-                console.log('Function call once')
                 if (resource) resource.discordRole = ctx.options[key]['role']
                 else {
                     let pensive = new Resource(pain, ctx.options[key]['role'])
-                    pensive.guild = config!
                     resources.push(pensive)
                 }
 

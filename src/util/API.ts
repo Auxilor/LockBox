@@ -1,5 +1,6 @@
 import req from 'petitio';
 import cryptoRandomString from 'crypto-random-string';
+import Logger from './Logger';
 
 export default class API {
     private static BASE_URL = 'https://api.polymart.org';
@@ -78,10 +79,9 @@ export default class API {
     }
 
     private static checkErrors(response: any) {
-        console.log(response)
         if (response.errors && response.errors.global)
-            console.error(response.errors.global)
+            Logger.error(response.errors.global)
 
-        console.log(response.data)
+        Logger.warn(response.data)
     }
 }
