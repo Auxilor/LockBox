@@ -63,33 +63,39 @@ export class PingCommand extends Command {
             await user.save()
         }
 
-        const member = await bot.getMember(ctx.guildID!, ctx.user.id)
-        Logger.info(member)
-        Logger.info(bot.users.entries())
-        let validResources = 0
+        const addedRoles: string[] = [];
 
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
         if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
         for (const resource of userData.resources) {
-            if (resource.purchaseValid && resource.purchaseStatus !== 'Free') {
-                validResources++
-
+            console.time('Loop');
+            if (resource.purchaseStatus !== 'Free') {
                 const resourceConfig = resources.find(r => r.Id === resource.id)
-                if (resourceConfig) {
+                if (resourceConfig!) {  
                     try {
-                        await bot.addGuildMemberRole(ctx.guildID!, member!.id, resourceConfig.discordRole, 'Verification')
+                        bot.addGuildMemberRole('452518336627081236', ctx.user.id, resourceConfig.discordRole);
+                        addedRoles.push(resourceConfig.discordRole)
                     } catch (e) {
-                        Logger.error(e)
-                        return { content: 'Failed to add roles', ephemeral: true }
+                        return {
+                            content: `Failed to add role: ${resourceConfig.discordRole}`,
+                            ephemeral: true
+                        }
                     }
-                } else {
-                    return {
-                        content: 'No Valid resources!',
-                        ephemeral: true
-                    }
-                }
-            }
+                } 
+            }            
+            console.timeEnd('Loop')
         }
+        console.log((await bot.getRESTGuild('452518336627081236')).roles)
+        // Logger.info(addedRoles.map())
+        let response = {
+            ephemeral: true,
+            content: ''
+        }
+        if (!addedRoles) {
+            response.content = `You don't own any plugins on Polymart!`
+        } else {
+            response.content = `Verified you for ${addedRoles.map(i => bot.guilds.get(ctx.guildID!)?.roles.get(i)?.name).join(', ')}!`
+        }
+        return response;
 	}
-
 }

@@ -1,0 +1,595 @@
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 466.720ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 500.548ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632387550229 /applications/:id/commands 200: 217ms (471ms avg) | 1/1 left | Reset 1632387550229 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632387550262 /applications/:id/guilds/452518336627081236/commands 200: 250ms (446ms avg) | 1/1 left | Reset 1632387550262 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 918.077ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 976.261ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632394970954 /applications/:id/commands 200: 224ms (472ms avg) | 1/1 left | Reset 1632394970954 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632394971014 /applications/:id/guilds/452518336627081236/commands 200: 288ms (450ms avg) | 1/1 left | Reset 1632394971014 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632394971188 /applications/:id/commands 200: 215ms (421ms avg) | 1/2 left | Reset 1632395032043 (60855ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395003948 /interactions/890553934454870016/:token/callback 204: 252ms (396ms avg) | 1/1 left | Reset 1632395003948 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 775.279ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 801.997ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395087434 /applications/:id/guilds/452518336627081236/commands 200: 367ms (486ms avg) | 1/1 left | Reset 1632395087434 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395087457 /applications/:id/commands 200: 389ms (474ms avg) | 1/1 left | Reset 1632395087457 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395087775 /applications/:id/commands 200: 301ms (454ms avg) | 1/2 left | Reset 1632395148588 (60813ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395097756 /interactions/890554321979187250/:token/callback 204: 642ms (468ms avg) | 1/1 left | Reset 1632395097756 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [object Object]
+DEBUG [Unknown src/main.ts] [DEBUG]: Added 9 role(s). 1632395099399 /webhooks/887702745279258695/:token/messages/@original 200: 351ms (453ms avg) | 4/5 left | Reset 1632395102119 (2720ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 631.950ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 659.955ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395180321 /applications/:id/guilds/452518336627081236/commands 200: 513ms (502ms avg) | 1/1 left | Reset 1632395180321 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395180336 /applications/:id/commands 200: 511ms (502ms avg) | 1/1 left | Reset 1632395180336 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395180783 /applications/:id/commands 200: 418ms (493ms avg) | 1/2 left | Reset 1632395241572 (60789ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395186426 /interactions/890554694190116874/:token/callback 204: 449ms (487ms avg) | 1/1 left | Reset 1632395186426 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 820.123ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 848.058ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395863818 /applications/:id/commands 200: 396ms (489ms avg) | 1/1 left | Reset 1632395863818 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395864028 /applications/:id/guilds/452518336627081236/commands 200: 611ms (500ms avg) | 1/1 left | Reset 1632395864028 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395864143 /applications/:id/commands 200: 309ms (480ms avg) | 1/2 left | Reset 1632395924981 (60838ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoSkills
+ERROR [Unknown src/main.ts] Command verify: Cannot read property 'length' of undefined
+TypeError: Cannot read property 'length' of undefined
+    at PingCommand.run (/home/jpuf/github/auxilor-verification/build/src/commands/VerifyCommand.js:85:42)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async SlashCreator._runCommand (/home/jpuf/github/auxilor-verification/.yarn/__virtual__/slash-create-virtual-4d618737f8/0/cache/slash-create-npm-4.1.1-3ace64459b-5c3b94eb34.zip/node_modules/slash-create/lib/creator.js:573:28)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 618.832ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 647.935ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395905380 /applications/:id/commands 200: 194ms (469ms avg) | 1/1 left | Reset 1632395905380 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395905414 /applications/:id/guilds/452518336627081236/commands 200: 234ms (442ms avg) | 1/1 left | Reset 1632395905414 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395905656 /applications/:id/commands 200: 243ms (416ms avg) | 0/2 left | Reset 1632395924930 (19274ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395912143 /interactions/890557743440728114/:token/callback 204: 254ms (391ms avg) | 1/1 left | Reset 1632395912143 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 603.155ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 629.221ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395938503 /applications/:id/guilds/452518336627081236/commands 200: 244ms (448ms avg) | 1/1 left | Reset 1632395938503 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395938516 /applications/:id/commands 200: 241ms (448ms avg) | 1/1 left | Reset 1632395938516 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395938732 /applications/:id/commands 200: 189ms (416ms avg) | 1/2 left | Reset 1632395999550 (60818ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoEnchants
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395943596 /interactions/890557876597321778/:token/callback 204: 260ms (392ms avg) | 1/1 left | Reset 1632395943596 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoEnchants
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632395950976 /interactions/890557907148627979/:token/callback 204: 241ms (366ms avg) | 1/1 left | Reset 1632395950976 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 927.159ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 968.420ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632396275146 /applications/:id/guilds/452518336627081236/commands 200: 197ms (438ms avg) | 1/1 left | Reset 1632396275146 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632396275150 /applications/:id/commands 200: 197ms (438ms avg) | 1/1 left | Reset 1632396275150 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632396275349 /applications/:id/commands 200: 183ms (406ms avg) | 1/2 left | Reset 1632396336147 (60798ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632396292585 /interactions/890559334055034880/:token/callback 204: 501ms (406ms avg) | 1/1 left | Reset 1632396292585 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: Added 9 role(s) 1632396296682 /webhooks/887702745279258695/:token/messages/@original 200: 223ms (378ms avg) | 4/5 left | Reset 1632396299361 (2679ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 878.606ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 919.868ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632401990069 /applications/:id/guilds/452518336627081236/commands 200: 1595ms (609ms avg) | 1/1 left | Reset 1632401990069 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632401990521 /applications/:id/commands 200: 2049ms (763ms avg) | 1/1 left | Reset 1632401990521 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632401991514 /applications/:id/commands 200: 978ms (810ms avg) | 1/2 left | Reset 1632402051200 (59686ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402001824 /interactions/890583270071369789/:token/callback 204: 1689ms (928ms avg) | 1/1 left | Reset 1632402001824 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: Added 9 role(s) 1632402011698 /webhooks/887702745279258695/:token/messages/@original 200: 326ms (910ms avg) | 4/5 left | Reset 1632402013490 (1792ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402045316 /interactions/890583455551881258/:token/callback 204: 869ms (946ms avg) | 1/1 left | Reset 1632402045316 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: Added 9 role(s) 1632402065458 /webhooks/887702745279258695/:token/messages/@original 200: 511ms (947ms avg) | 4/5 left | Reset 1632402067224 (1766ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 705.908ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 754.249ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402442889 /applications/:id/guilds/452518336627081236/commands 200: 4835ms (933ms avg) | 1/1 left | Reset 1632402442889 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402443698 /applications/:id/commands 200: 5640ms (1447ms avg) | 1/1 left | Reset 1632402443698 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402444515 /applications/:id/commands 200: 788ms (1475ms avg) | 1/2 left | Reset 1632402505006 (60491ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402468202 /interactions/890585207470690304/:token/callback 404: 7040ms (2129ms avg) | 1/1 left | Reset 1632402468202 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 610.178ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 636.828ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402495261 /applications/:id/commands 200: 435ms (493ms avg) | 1/1 left | Reset 1632402495261 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402495611 /applications/:id/guilds/452518336627081236/commands 200: 790ms (522ms avg) | 1/1 left | Reset 1632402495611 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402495703 /applications/:id/commands 200: 406ms (512ms avg) | 0/2 left | Reset 1632402505043 (9340ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402507341 /interactions/890585396814151751/:token/callback 204: 1038ms (565ms avg) | 1/1 left | Reset 1632402507341 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: Added 9 role(s) 1632402526616 /webhooks/887702745279258695/:token/messages/@original 200: 5180ms (1033ms avg) | 4/5 left | Reset 1632402526616 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 773.763ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 816.723ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402688632 /applications/:id/guilds/452518336627081236/commands 200: 1694ms (619ms avg) | 1/1 left | Reset 1632402688632 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402688971 /applications/:id/commands 200: 2036ms (772ms avg) | 1/1 left | Reset 1632402688971 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402690403 /applications/:id/commands 200: 1407ms (862ms avg) | 1/2 left | Reset 1632402750901 (60498ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoEnchants
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402717162 /interactions/890586266968653894/:token/callback 404: 3387ms (1150ms avg) | 1/1 left | Reset 1632402717162 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 636.961ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 666.774ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402758302 /applications/:id/commands 200: 420ms (492ms avg) | 1/1 left | Reset 1632402758302 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402758395 /applications/:id/guilds/452518336627081236/commands 200: 527ms (494ms avg) | 1/1 left | Reset 1632402758395 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402760177 /applications/:id/commands 200: 1841ms (628ms avg) | 1/2 left | Reset 1632402819750 (59573ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402775388 /interactions/890586519285432320/:token/callback 404: 1469ms (724ms avg) | 1/1 left | Reset 1632402775388 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 607.855ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 634.261ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402790716 /applications/:id/guilds/452518336627081236/commands 200: 431ms (493ms avg) | 1/1 left | Reset 1632402790716 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402791434 /applications/:id/commands 200: 1149ms (557ms avg) | 1/1 left | Reset 1632402791434 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402792322 /applications/:id/commands 200: 858ms (592ms avg) | 0/2 left | Reset 1632402819698 (27376ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402808977 /interactions/890586663754014730/:token/callback 204: 628ms (604ms avg) | 1/1 left | Reset 1632402808977 (0ms left)
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoEnchants
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoBosses
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ Talismans
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ StatTrackers
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoArmor
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoWeapons
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ EcoItems
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16 - 1.17] ⚡ Reforges
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] [1.16-1.17] ⚡ EcoSkills
+DEBUG [Unknown src/main.ts] [DEBUG]: Added 9 role(s) 1632402824063 /webhooks/887702745279258695/:token/messages/@original 200: 500ms (604ms avg) | 4/5 left | Reset 1632402826297 (2234ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 661.993ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 690.168ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402864712 /applications/:id/commands 200: 1459ms (595ms avg) | 1/1 left | Reset 1632402864712 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402865539 /applications/:id/guilds/452518336627081236/commands 200: 2292ms (774ms avg) | 1/1 left | Reset 1632402865539 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402865777 /applications/:id/commands 200: 1032ms (827ms avg) | 1/2 left | Reset 1632402926275 (60498ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632402877030 /interactions/890586949356781568/:token/callback 204: 585ms (835ms avg) | 1/1 left | Reset 1632402877030 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Added role(s) 1632402906108 /webhooks/887702745279258695/:token/messages/@original 200: 1434ms (928ms avg) | 4/5 left | Reset 1632402907564 (1456ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 620.299ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 647.111ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403007853 /applications/:id/commands 200: 505ms (500ms avg) | 1/1 left | Reset 1632403007853 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403008404 /applications/:id/commands 200: 519ms (501ms avg) | 1/2 left | Reset 1632403068808 (60404ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403008804 /applications/:id/guilds/452518336627081236/commands 200: 1471ms (598ms avg) | 1/1 left | Reset 1632403008804 (0ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403039984 /interactions/890587629568004206/:token/callback 404: 1354ms (683ms avg) | 1/1 left | Reset 1632403039984 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 603.954ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 632.176ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403048166 /applications/:id/commands 200: 1578ms (607ms avg) | 1/1 left | Reset 1632403048166 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403051404 /applications/:id/guilds/452518336627081236/commands 200: 4840ms (1041ms avg) | 1/1 left | Reset 1632403051404 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403054887 /applications/:id/commands 200: 6688ms (1659ms avg) | 0/2 left | Reset 1632403068774 (13887ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403061457 /interactions/890587723012898877/:token/callback 204: 555ms (1664ms avg) | 1/1 left | Reset 1632403061457 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Added role(s) 1632403073676 /webhooks/887702745279258695/:token/messages/@original 200: 7644ms (2378ms avg) | 4/5 left | Reset 1632403075969 (2293ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 596.372ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 630.087ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403281355 /applications/:id/guilds/452518336627081236/commands 200: 430ms (493ms avg) | 1/1 left | Reset 1632403281355 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403281398 /applications/:id/commands 200: 448ms (487ms avg) | 1/1 left | Reset 1632403281398 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403281756 /applications/:id/commands 200: 326ms (469ms avg) | 1/2 left | Reset 1632403342311 (60555ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403288373 /interactions/890588679075135488/:token/callback 204: 585ms (477ms avg) | 1/1 left | Reset 1632403288373 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 668.606ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 704.240ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403343654 /applications/:id/guilds/452518336627081236/commands 200: 6412ms (1091ms avg) | 1/1 left | Reset 1632403343654 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403343662 /applications/:id/commands 200: 6420ms (1683ms avg) | 1/1 left | Reset 1632403343662 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403343993 /applications/:id/commands 200: 317ms (1664ms avg) | 1/2 left | Reset 1632403404455 (60462ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632403359543 /interactions/890588978082889769/:token/callback 204: 435ms (1657ms avg) | 1/1 left | Reset 1632403359543 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 1079.128ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 1132.264ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 1725.004ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 1829.083ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410318907 /applications/:id/guilds/452518336627081236/commands 200: 466ms (496ms avg) | 1/1 left | Reset 1632410318907 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410319208 /applications/:id/commands 200: 769ms (522ms avg) | 1/1 left | Reset 1632410319208 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410319556 /applications/:id/commands 200: 332ms (505ms avg) | 1/2 left | Reset 1632410380171 (60615ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 716.288ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 742.650ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410341120 /applications/:id/guilds/452518336627081236/commands 200: 333ms (483ms avg) | 1/1 left | Reset 1632410341120 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410341140 /applications/:id/commands 200: 354ms (468ms avg) | 1/1 left | Reset 1632410341140 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410341589 /applications/:id/commands 200: 435ms (461ms avg) | 0/2 left | Reset 1632410380192 (38603ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410408404 /interactions/890618544658714724/:token/callback 204: 241ms (435ms avg) | 1/1 left | Reset 1632410408404 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 630.064ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 656.983ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410495855 /applications/:id/commands 200: 376ms (487ms avg) | 1/1 left | Reset 1632410495855 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410495905 /applications/:id/guilds/452518336627081236/commands 200: 436ms (480ms avg) | 1/1 left | Reset 1632410495905 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410496346 /applications/:id/commands 200: 468ms (476ms avg) | 1/2 left | Reset 1632410556883 (60537ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] ,,,,,,,,
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410513143 /interactions/890618982766358528/:token/callback 204: 328ms (458ms avg) | 1/1 left | Reset 1632410513143 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 792.921ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 822.753ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410550148 /applications/:id/guilds/452518336627081236/commands 200: 380ms (475ms avg) | 1/1 left | Reset 1632410550148 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410550161 /applications/:id/commands 200: 377ms (475ms avg) | 1/1 left | Reset 1632410550161 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410550629 /applications/:id/commands 200: 440ms (469ms avg) | 0/2 left | Reset 1632410556916 (6287ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] ,,,,,,,,
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410560355 /interactions/890619182608158780/:token/callback 204: 263ms (445ms avg) | 1/1 left | Reset 1632410560355 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 737.130ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 777.828ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410585398 /applications/:id/guilds/452518336627081236/commands 200: 932ms (543ms avg) | 1/1 left | Reset 1632410585398 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410585432 /applications/:id/commands 200: 962ms (589ms avg) | 1/1 left | Reset 1632410585432 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410587410 /applications/:id/commands 200: 1943ms (733ms avg) | 1/2 left | Reset 1632410647953 (60543ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+INFO [Unknown src/commands/VerifyCommand.ts PingCommand.run] ,,,,,,,,
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410599094 /interactions/890619342570520606/:token/callback 204: 845ms (767ms avg) | 1/1 left | Reset 1632410599094 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 643.079ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 669.595ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410673257 /applications/:id/guilds/452518336627081236/commands 200: 460ms (496ms avg) | 1/1 left | Reset 1632410673257 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410673885 /applications/:id/commands 200: 1088ms (554ms avg) | 1/1 left | Reset 1632410673885 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410674309 /applications/:id/commands 200: 396ms (543ms avg) | 1/2 left | Reset 1632410734919 (60610ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632410683958 /interactions/890619695441535057/:token/callback 204: 471ms (540ms avg) | 1/1 left | Reset 1632410683958 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 764.651ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 796.063ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632413910617 /applications/:id/guilds/452518336627081236/commands 200: 200ms (470ms avg) | 1/1 left | Reset 1632413910617 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632413910664 /applications/:id/commands 200: 245ms (444ms avg) | 1/1 left | Reset 1632413910664 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 826.857ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 860.410ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632413926363 /applications/:id/commands 200: 182ms (468ms avg) | 1/1 left | Reset 1632413926363 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632413926395 /applications/:id/guilds/452518336627081236/commands 200: 216ms (439ms avg) | 1/1 left | Reset 1632413926395 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 905.604ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 943.566ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414106728 /applications/:id/commands 200: 188ms (468ms avg) | 1/1 left | Reset 1632414106728 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414106787 /applications/:id/guilds/452518336627081236/commands 200: 250ms (443ms avg) | 1/1 left | Reset 1632414106787 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414107003 /applications/:id/commands 200: 248ms (417ms avg) | 1/2 left | Reset 1632414167187 (60184ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414132915 /interactions/890634166151020584/:token/callback 204: 192ms (386ms avg) | 1/1 left | Reset 1632414132915 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 1515.303ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 1589.383ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414190916 /applications/:id/guilds/452518336627081236/commands 200: 270ms (477ms avg) | 1/1 left | Reset 1632414190916 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414190927 /applications/:id/commands 200: 282ms (455ms avg) | 1/1 left | Reset 1632414190927 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414191191 /applications/:id/commands 200: 238ms (428ms avg) | 1/2 left | Reset 1632414251350 (60159ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+ERROR [Unknown src/main.ts] Command verify: Cannot read property 'roles' of undefined
+TypeError: Cannot read property 'roles' of undefined
+    at PingCommand.run (/home/jpuf/github/auxilor-verification/build/src/commands/VerifyCommand.js:85:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async SlashCreator._runCommand (/home/jpuf/github/auxilor-verification/.yarn/__virtual__/slash-create-virtual-4d618737f8/0/cache/slash-create-npm-4.1.1-3ace64459b-5c3b94eb34.zip/node_modules/slash-create/lib/creator.js:573:28)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414198159 /interactions/890634439351238717/:token/callback 204: 232ms (401ms avg) | 1/1 left | Reset 1632414198159 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 1690.123ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 1793.120ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414238283 /applications/:id/commands 200: 266ms (476ms avg) | 1/1 left | Reset 1632414238283 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414238589 /applications/:id/commands 200: 230ms (449ms avg) | 0/2 left | Reset 1632414251385 (12796ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414239229 /applications/:id/guilds/452518336627081236/commands 200: 1218ms (520ms avg) | 1/1 left | Reset 1632414239229 (0ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414249490 /interactions/890634654938456164/:token/callback 204: 230ms (493ms avg) | 1/1 left | Reset 1632414249490 (0ms left)
+                                                                                                                                                                   
