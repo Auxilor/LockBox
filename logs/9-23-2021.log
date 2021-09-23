@@ -592,4 +592,93 @@ DEBUG [Unknown src/events/ready.ts] Connected to database
 DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
 INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
 DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632414249490 /interactions/890634654938456164/:token/callback 204: 230ms (493ms avg) | 1/1 left | Reset 1632414249490 (0ms left)
-                                                                                                                                                                   
+                                                                                                                                                                   DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 547.673ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 660.814ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430251941 /applications/:id/commands 200: 224ms (472ms avg) | 1/1 left | Reset 1632430251941 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430251953 /applications/:id/guilds/452518336627081236/commands 200: 237ms (445ms avg) | 1/1 left | Reset 1632430251953 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430252127 /applications/:id/commands 200: 179ms (412ms avg) | 1/2 left | Reset 1632430319083 (66956ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430326948 /interactions/890702117482938388/:token/callback 204: 220ms (384ms avg) | 1/1 left | Reset 1632430326948 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 448.969ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 466.238ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430518815 /applications/:id/commands 200: 228ms (472ms avg) | 1/1 left | Reset 1632430518815 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430518826 /applications/:id/guilds/452518336627081236/commands 200: 240ms (446ms avg) | 1/1 left | Reset 1632430518826 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430519069 /applications/:id/commands 200: 247ms (420ms avg) | 1/2 left | Reset 1632430586023 (66954ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430530494 /interactions/890702971883630623/:token/callback 204: 314ms (401ms avg) | 1/1 left | Reset 1632430530494 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 429.467ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 1 Event(s), in 446.952ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430685341 /applications/:id/guilds/452518336627081236/commands 200: 302ms (480ms avg) | 1/1 left | Reset 1632430685341 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430685369 /applications/:id/commands 200: 331ms (463ms avg) | 1/1 left | Reset 1632430685369 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430685700 /applications/:id/commands 200: 325ms (445ms avg) | 1/2 left | Reset 1632430752596 (66896ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430707694 /interactions/890703714048962561/:token/callback 204: 471ms (442ms avg) | 1/1 left | Reset 1632430707694 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Auxilor#0001 (342599725062815744) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632430935150 /interactions/890704667829473280/:token/callback 204: 231ms (415ms avg) | 1/1 left | Reset 1632430935150 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event messageCreate, in 421.963ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 0.574ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 2 Event(s), in 440.915ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431820478 /applications/:id/commands 200: 214ms (471ms avg) | 1/1 left | Reset 1632431820478 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431820500 /applications/:id/guilds/452518336627081236/commands 200: 237ms (444ms avg) | 1/1 left | Reset 1632431820500 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431820686 /applications/:id/commands 200: 202ms (414ms avg) | 1/2 left | Reset 1632431887627 (66941ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts] [DEBUG]: Running command: verify (888389801793966131, guild 452518336627081236)
+INFO [Unknown src/main.ts] Jpuf#0001 (420893806049624074) ran command verify
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431834903 /interactions/890708442799542282/:token/callback 204: 295ms (393ms avg) | 1/1 left | Reset 1632431834903 (0ms left)
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event messageCreate, in 417.690ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 0.582ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 2 Event(s), in 436.413ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431973805 /applications/:id/guilds/452518336627081236/commands 200: 322ms (482ms avg) | 1/1 left | Reset 1632431973805 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431973814 /applications/:id/commands 200: 333ms (465ms avg) | 1/1 left | Reset 1632431973814 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632431974210 /applications/:id/commands 200: 390ms (454ms avg) | 1/2 left | Reset 1632432041179 (66969ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event messageCreate, in 438.446ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded Event ready, in 0.940ms.
+DEBUG [Unknown src/main.ts Lockbox.loadEvents] Loaded 2 Event(s), in 462.292ms.
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632432036089 /applications/:id/commands 200: 275ms (477ms avg) | 1/1 left | Reset 1632432036089 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "ping" (888046760071680070, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "verify" (888389801793966131, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "config" (888445428637503518, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "resource" (889444320871079937, type 1)
+DEBUG [Unknown src/main.ts] [DEBUG]: Found command "migrate" (890235289400922142, type 2)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632432036127 /applications/:id/guilds/452518336627081236/commands 200: 313ms (458ms avg) | 1/1 left | Reset 1632432036127 (0ms left)
+DEBUG [Unknown src/main.ts] [DEBUG]: undefined 1632432036377 /applications/:id/commands 200: 280ms (436ms avg) | 1/2 left | Reset 1632432103378 (67001ms left)
+INFO [Unknown src/events/ready.ts] Logged in as LockBox#5242
+DEBUG [Unknown src/events/ready.ts] Connected to database

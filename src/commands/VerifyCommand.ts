@@ -68,7 +68,6 @@ export class PingCommand extends Command {
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
         if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
         for (const resource of userData.resources) {
-            console.time('Loop');
             if (resource.purchaseStatus !== 'Free') {
                 const resourceConfig = resources.find(r => r.Id === resource.id)
                 if (resourceConfig!) {  
@@ -83,10 +82,9 @@ export class PingCommand extends Command {
                     }
                 } 
             }            
-            console.timeEnd('Loop')
         }
-        console.log((await bot.getRESTGuild('452518336627081236')).roles)
         // Logger.info(addedRoles.map())
+        let guildRoles = (await (bot.getRESTGuild('452518336627081236'))).roles
         let response = {
             ephemeral: true,
             content: ''
@@ -94,7 +92,7 @@ export class PingCommand extends Command {
         if (!addedRoles) {
             response.content = `You don't own any plugins on Polymart!`
         } else {
-            response.content = `Verified you for ${addedRoles.map(i => bot.guilds.get(ctx.guildID!)?.roles.get(i)?.name).join(', ')}!`
+            response.content = `Verified you for **${addedRoles.map(i => guildRoles.get(i)?.name).join('**, **')}**!`
         }
         return response;
 	}
