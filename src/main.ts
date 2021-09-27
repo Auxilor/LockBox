@@ -85,4 +85,26 @@ export default class Lockbox extends Eris.Client {
 		}
 	}
 
+    async addGuildUserRole(guildId: string, userId: string, roleId: string) {
+        if (this.guilds.get(guildId)?.members.get(userId)?.roles.includes(roleId)) {
+            return {
+                success: false,
+                message: 'User already has role'
+            }
+        }
+        this.addGuildMemberRole(guildId, userId, roleId)
+        
+        if (this.guilds.get(guildId)?.members.get(userId)?.roles.includes(roleId)) {
+            return {
+                success: true,
+                message: 'Added Role'
+            }
+        } else {
+            return {
+                success: false,
+                message: 'Failed to add role'
+            }
+        }
+    }
+
 }

@@ -5,6 +5,7 @@ import API from '@util/API';
 import Database from '@util/Database';
 import { User } from '../models/User';
 import { Config } from '../models/Config';
+import Logger from '@util/Logger';
 
 export class PingCommand extends Command {
 	constructor(creator: SlashCreator) {
@@ -71,8 +72,7 @@ export class PingCommand extends Command {
                 const resourceConfig = resources.find(r => r.Id === resource.id)
                 if (resourceConfig!) {  
                     try {
-                        bot.addGuildMemberRole('452518336627081236', ctx.user.id, resourceConfig.discordRole);
-                        addedRoles.push(resourceConfig.discordRole)
+                        bot.addGuildUserRole('452518336627081236', ctx.user.id, resourceConfig.discordRole).then( i => i.success ? addedRoles.push(resourceConfig.discordRole) : Logger.warn(i.message))
                     } catch (e) {
                         return {
                             content: `Failed to add role: ${resourceConfig.discordRole}`,
@@ -88,11 +88,8 @@ export class PingCommand extends Command {
             content: ''
         }
 
-        console.log(addedRoles)
-        console.log(addedRoles.length)
-        console.log(!addedRoles.length)
         if (!addedRoles.length) {
-            response.content = `You don't own any plugins on Polymart!\nYou can transfer them using these links:\n${resources.map(i => 'https://polymart.org/resource/' + i + '/?intent=transfer-license').join('\n')}`
+            response.content = `You don't own any plugins on Polymart!\nYou can transfer them using these links:\n${resources.map(i => 'https://polymart.org/resource/' + i.Id + '/?intent=transfer-license').join('\n')}`
         } else {
             response.content = `Verified you for **${addedRoles.map(i => guildRoles.get(i)?.name).join('**, **')}**!`
         }
