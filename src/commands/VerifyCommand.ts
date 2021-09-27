@@ -5,7 +5,6 @@ import API from '@util/API';
 import Database from '@util/Database';
 import { User } from '../models/User';
 import { Config } from '../models/Config';
-import Logger from '@util/Logger';
 
 export class PingCommand extends Command {
 	constructor(creator: SlashCreator) {
@@ -83,14 +82,17 @@ export class PingCommand extends Command {
                 } 
             }            
         }
-        // Logger.info(addedRoles.map())
         let guildRoles = (await (bot.getRESTGuild('452518336627081236'))).roles
         let response = {
             ephemeral: true,
             content: ''
         }
-        if (!addedRoles) {
-            response.content = `You don't own any plugins on Polymart!`
+
+        console.log(addedRoles)
+        console.log(addedRoles.length)
+        console.log(!addedRoles.length)
+        if (!addedRoles.length) {
+            response.content = `You don't own any plugins on Polymart!\nYou can transfer them using these links:\n${resources.map(i => 'https://polymart.org/resource/' + i + '/?intent=transfer-license').join('\n')}`
         } else {
             response.content = `Verified you for **${addedRoles.map(i => guildRoles.get(i)?.name).join('**, **')}**!`
         }

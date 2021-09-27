@@ -9,8 +9,11 @@ import Logger from "@util/Logger";
 export default class Lockbox extends Eris.Client {
     constructor(token: string) {
         super(token, {
-            getAllUsers: true,
-            restMode: true
+            restMode: true,
+            intents: [
+                'guilds',
+                'guildMessages'
+            ]
         } as ClientOptions);
     }
 
