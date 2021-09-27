@@ -69,7 +69,7 @@ export class ResourceCommand extends Command {
                 
                 //#endregion
                 const resources = await config.resources
-                const resource = resources.find(r => r.Id === response.id)
+                const resource = resources.find(r => r.Id === pain.id)
                 
                 if (resource) resource.discordRole = ctx.options[key]['role']
                 else {

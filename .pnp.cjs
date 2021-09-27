@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:10.0.0"],
             ["module-alias", "npm:2.2.2"],
             ["petitio", "npm:1.3.2"],
-            ["slash-create", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.1.1"],
+            ["slash-create", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.2.0"],
             ["source-map-support", "npm:0.5.20"],
             ["tslog", "npm:3.2.2"],
             ["typeorm", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:0.2.37"],
@@ -307,7 +307,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:10.0.0"],
             ["module-alias", "npm:2.2.2"],
             ["petitio", "npm:1.3.2"],
-            ["slash-create", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.1.1"],
+            ["slash-create", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.2.0"],
             ["source-map-support", "npm:0.5.20"],
             ["tslog", "npm:3.2.2"],
             ["typeorm", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:0.2.37"],
@@ -1736,17 +1736,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["slash-create", [
-        ["npm:4.1.1", {
-          "packageLocation": "./.yarn/cache/slash-create-npm-4.1.1-3ace64459b-5c3b94eb34.zip/node_modules/slash-create/",
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/slash-create-npm-4.2.0-d78610ea13-5fd1258b9f.zip/node_modules/slash-create/",
           "packageDependencies": [
-            ["slash-create", "npm:4.1.1"]
+            ["slash-create", "npm:4.2.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.1.1", {
-          "packageLocation": "./.yarn/__virtual__/slash-create-virtual-4d618737f8/0/cache/slash-create-npm-4.1.1-3ace64459b-5c3b94eb34.zip/node_modules/slash-create/",
+        ["virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.2.0", {
+          "packageLocation": "./.yarn/__virtual__/slash-create-virtual-2eaeedf0aa/0/cache/slash-create-npm-4.2.0-d78610ea13-5fd1258b9f.zip/node_modules/slash-create/",
           "packageDependencies": [
-            ["slash-create", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.1.1"],
+            ["slash-create", "virtual:b41ebcc4134718b48e26de347e7b548c56c2311502265ea671b3e8aee1a2508ad95bdd3e0d95a0f58226f2899f6638dde39e092d79ad84b65d41288476cd7e0c#npm:4.2.0"],
             ["@discordjs/collection", "npm:0.2.1"],
             ["@types/express", null],
             ["@types/fastify", null],

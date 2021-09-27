@@ -1,4 +1,4 @@
-import { Command, SlashCommandOptions, SlashCreator } from 'slash-create';
+import { Command, SlashCommand, SlashCommandOptions, SlashCreator } from 'slash-create';
 import Lockbox from '@Lockbox';
 import { bot } from '@root/src/index';
 import Logger from './Logger';
@@ -7,7 +7,7 @@ interface LockBoxSlashCommandOptions extends SlashCommandOptions {
 	helpText?: string;
 }
 
-export default class BaseCommand extends Command {
+export default class BaseCommand extends SlashCommand {
 	readonly helpText: string;
 
 	readonly client: Lockbox;

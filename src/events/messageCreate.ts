@@ -1,5 +1,4 @@
 import Event from "@util/events";
-import Logger from "@util/Logger";
 import Database from "@util/Database";
 import { Config } from "@models/Config";
 import { bot } from '@root/src/index';

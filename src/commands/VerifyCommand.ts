@@ -39,6 +39,8 @@ export class PingCommand extends Command {
 
         const resources = await config.resources;
 
+        Logger.debug(ctx.options);
+
         if (!config.apiKey) {
             return {
                 content: 'Bot has not been configured correctly. Missing API KEY',
@@ -52,6 +54,7 @@ export class PingCommand extends Command {
             const userID = await API.verifyUser(<string>ctx.options.token)
             if (!userID) return { content: 'Verification Failed', ephemeral: true }
 
+            
             if (await manager.findOne(User, { polymartUserId: userID })) {
                 return {
                     content: 'Verification Failed - Account already linked',
@@ -64,7 +67,6 @@ export class PingCommand extends Command {
         }
 
         const addedRoles: string[] = [];
-
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
         if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
         for (const resource of userData.resources) {
@@ -72,12 +74,15 @@ export class PingCommand extends Command {
                 const resourceConfig = resources.find(r => r.Id === resource.id)
                 if (resourceConfig!) {  
                     try {
-                        bot.addGuildUserRole('452518336627081236', ctx.user.id, resourceConfig.discordRole).then( i => i.success ? addedRoles.push(resourceConfig.discordRole) : Logger.warn(i.message))
+                        bot.addGuildUserRole('452518336627081236', ctx.user.id, resourceConfig.discordRole).then( i => {
+                            if(i.success) {
+                                addedRoles.push(resourceConfig.discordRole)
+                            } else if (i.message === 'User already has role') {
+                                addedRoles.push(resourceConfig.discordRole)
+                            }
+                        })
                     } catch (e) {
-                        return {
-                            content: `Failed to add role: ${resourceConfig.discordRole}`,
-                            ephemeral: true
-                        }
+                        
                     }
                 } 
             }            

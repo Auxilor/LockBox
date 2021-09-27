@@ -22,7 +22,11 @@ export default class API {
     }
 
     public static verifyUser = async (token: string): Promise<string | null> => {
-
+        console.log(req(`${this.BASE_URL}/v1/verifyUser`).query({
+            service: this.service,
+            nonce: this.NONCE,
+            token
+        }).url)
         const fullres = await req(`${this.BASE_URL}/v1/verifyUser`).query({
             service: this.service,
             nonce: this.NONCE,
@@ -82,6 +86,6 @@ export default class API {
         if (response.errors && response.errors.global)
             Logger.error(response.errors.global)
 
-        Logger.warn(response.data)
+        Logger.warn(response)
     }
 }

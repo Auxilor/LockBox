@@ -39,9 +39,7 @@ export class AdminCommand extends Command {
         switch (key) {
             case 'unlink':
                 const users = manager.getRepository(User);
-                console.log(await users.query('SELECT * FROM "user"'));
-                (await users.findOne(ctx.member!.id))?.remove()
-                console.log(await users.query('SELECT * FROM "user"'));
+                (await users.findOne(options.userid))?.remove()
 
                 return { content: 'Unlinked user!', ephemeral: true }
             default:
