@@ -18,8 +18,8 @@ export default class Lockbox extends Eris.Client {
     }
 
     async launch() {
-        await this.loadEvents();
         await this.loadCommands();
+        await this.loadEvents();
         await this.connect();
     }
     

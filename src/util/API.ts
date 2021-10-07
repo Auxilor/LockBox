@@ -22,11 +22,6 @@ export default class API {
     }
 
     public static verifyUser = async (token: string): Promise<string | null> => {
-        console.log(req(`${this.BASE_URL}/v1/verifyUser`).query({
-            service: this.service,
-            nonce: this.NONCE,
-            token
-        }).url)
         const fullres = await req(`${this.BASE_URL}/v1/verifyUser`).query({
             service: this.service,
             nonce: this.NONCE,
@@ -69,6 +64,7 @@ export default class API {
 
         return null
     }
+
     public static async getResourceInfo(resource_id: number, api_key: string): Promise<ResourceInfo | undefined> {
         const fullres = await req(`${this.BASE_URL}/v1/getResourceInfo`).body({
             api_key,
@@ -80,6 +76,21 @@ export default class API {
 
 
         this.checkErrors(fullres)
+    }
+
+    public static migrateUser = async (resource_id: number | string, user_id: string, api_key: string): Promise<migrateUserResponse | null> => {
+        const fullres = await req(`${this.BASE_URL}/v1/addBuyer`).body({
+            api_key,
+            resource_id,
+            user_id
+        }).json<migrateUser>()
+        let {response: res} = fullres;
+
+        if (res.success) return res;
+
+        this.checkErrors(fullres)
+
+        return null
     }
 
     private static checkErrors(response: any) {

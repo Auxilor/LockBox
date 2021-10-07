@@ -33,6 +33,29 @@ interface getUserDataResponse {
     errors: any[];
 }
 
+interface migrateUser {
+    request: PolymartRequest;
+    response: migrateUserResponse;
+}
+
+interface migrateUserResponse {
+    success: boolean;
+    resource: migrateUserResource;
+    user: {
+        id: number;
+    }
+}
+
+interface migrateUserResource {
+    id: number;
+    previousPurchaseValid: boolean;
+    previousPurchaseStatus: string;
+}
+
+interface migrateUserResult {
+
+}
+
 interface ResourceElement {
     id: string;
     title: string;

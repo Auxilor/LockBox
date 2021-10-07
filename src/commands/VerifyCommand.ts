@@ -25,41 +25,40 @@ export class PingCommand extends Command {
 	}
 
 	async run(ctx: CommandContext) {
+        await ctx.defer(true);
+
         const manager = await Database.getInstance().getManager();
         const config = await manager.findOne(Config, ctx.guildID);
 
         if(!config) {
-            return {
-                content: 'Bot has not be configured correctly!',
-                ephemeral: true
-            }
+            ctx.send('Bot has not be configured correctly!', { ephemeral: true });
+            return;
         }
 
         let user = await manager.findOne(User, ctx.member!.id)
 
         const resources = await config.resources;
 
-        Logger.debug(ctx.options);
-
         if (!config.apiKey) {
-            return {
-                content: 'Bot has not been configured correctly. Missing API KEY',
-                ephemeral: true,
-            }
+            ctx.send('Bot has not been configured correctly. Missing API KEY', { ephemeral: true })
+            return;
         }
 
         if(!user) {
-            if(!ctx.options.token)  return { content: `Get your token [here](${verifyURL})`, ephemeral: true }
+            if(!ctx.options.token) {
+                ctx.send(`Get your token [here](${verifyURL})`, { ephemeral: true })
+                return;
+            }
 
             const userID = await API.verifyUser(<string>ctx.options.token)
-            if (!userID) return { content: 'Verification Failed', ephemeral: true }
-
+            if (!userID) {
+                ctx.send('Verification Failed', { ephemeral: true })
+                return;
+            }
             
             if (await manager.findOne(User, { polymartUserId: userID })) {
-                return {
-                    content: 'Verification Failed - Account already linked',
-                    ephemeral: true,
-                }
+                ctx.send('Verification Failed - Account already linked', { ephemeral: true })
+                return;
             }
 
             user = new User(ctx.member!.id, userID)
@@ -68,9 +67,12 @@ export class PingCommand extends Command {
 
         const addedRoles: string[] = [];
         const userData = await API.getUserData(user.polymartUserId, config.apiKey)
-        if (!userData) return { content: 'An error occured fetching user data!', ephemeral: true }
+        if (!userData) {
+            ctx.send('An error occured fetching user data!', { ephemeral: true })
+            return;
+        }
         for (const resource of userData.resources) {
-            if (resource.purchaseStatus !== 'Free') {
+            if (!['Free', 'None'].includes(resource.purchaseStatus)) {
                 const resourceConfig = resources.find(r => r.Id === resource.id)
                 if (resourceConfig!) {  
                     try {
@@ -88,16 +90,13 @@ export class PingCommand extends Command {
             }            
         }
         let guildRoles = (await (bot.getRESTGuild('452518336627081236'))).roles
-        let response = {
-            ephemeral: true,
-            content: ''
-        }
 
         if (!addedRoles.length) {
-            response.content = `You don't own any plugins on Polymart!\nYou can transfer them using these links:\n${resources.map(i => 'https://polymart.org/resource/' + i.Id + '/?intent=transfer-license').join('\n')}`
+            ctx.send(`You don't own any plugins on Polymart!\nYou can transfer them using these links:\n${resources.map(i => 'https://polymart.org/resource/' + i.Id + '/?intent=transfer-license').join('\n')}`, { ephemeral: true })
+            return;
         } else {
-            response.content = `Verified you for **${addedRoles.map(i => guildRoles.get(i)?.name).join('**, **')}**!`
+            ctx.send(`Verified you for **${addedRoles.map(i => guildRoles.get(i)?.name).join('**, **')}**!`, { ephemeral: true })
+            return;
         }
-        return response;
 	}
 }
