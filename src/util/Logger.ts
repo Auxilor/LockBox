@@ -47,7 +47,7 @@ export default class Logger {
 			]
 		});
 	}
-
+	
 	static get silly() { return this.getLogger().silly.bind(this.getLogger()); }
 	static get trace() { return this.getLogger().trace.bind(this.getLogger()); }
 	static get debug() { return this.getLogger().debug.bind(this.getLogger()); }

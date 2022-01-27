@@ -9,15 +9,15 @@ interface LockBoxSlashCommandOptions extends SlashCommandOptions {
 
 export default class BaseCommand extends SlashCommand {
 	readonly helpText: string;
-
+	
 	readonly client: Lockbox;
 	readonly log: (...args: any[]) => void;
-
+	
 	constructor(creator: SlashCreator, opts: LockBoxSlashCommandOptions) {
 		super(creator, opts);
-
+		
 		this.helpText = opts.helpText ?? 'No Help Available';
-
+		
 		this.client = bot;
 		this.log = Logger.info;
 	}

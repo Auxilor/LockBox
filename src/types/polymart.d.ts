@@ -1,293 +1,293 @@
 interface PolymartRequest {
-    time: number;
-    action: string;
-    timeElapsed: string;
+	time: number;
+	action: string;
+	timeElapsed: string;
 }
 
 interface getDownloadURL {
-    request: PolymartRequest;
-    response: getDownloadURLResponse;
+	request: PolymartRequest;
+	response: getDownloadURLResponse;
 }
 
 interface getDownloadURLResponse {
-    success: boolean;
-    message: string;
-    result: getDownloadURLResult;
+	success: boolean;
+	message: string;
+	result: getDownloadURLResult;
 }
 
 interface getDownloadURLResult {
-    url: string;
-    version: string;
-    expires: number;
+	url: string;
+	version: string;
+	expires: number;
 }
 
 interface getUserData {
-    request: PolymartRequest;
-    response: getUserDataResponse;
+	request: PolymartRequest;
+	response: getUserDataResponse;
 }
 
 interface getUserDataResponse {
-    success: string;
-    resources: ResourceElement[];
-    user: User;
-    errors: any[];
+	success: string;
+	resources: ResourceElement[];
+	user: User;
+	errors: any[];
 }
 
 interface migrateUser {
-    request: PolymartRequest;
-    response: migrateUserResponse;
+	request: PolymartRequest;
+	response: migrateUserResponse;
 }
 
 interface migrateUserResponse {
-    success: boolean;
-    resource: migrateUserResource;
-    user: {
-        id: number;
-    }
+	success: boolean;
+	resource: migrateUserResource;
+	user: {
+		id: number;
+	}
 }
 
 interface migrateUserResource {
-    id: number;
-    previousPurchaseValid: boolean;
-    previousPurchaseStatus: string;
+	id: number;
+	previousPurchaseValid: boolean;
+	previousPurchaseStatus: string;
 }
 
 interface migrateUserResult {
-
+	
 }
 
 interface ResourceElement {
-    id: string;
-    title: string;
-    price: string;
-    currency: string;
-    url: string;
-    subtitle: string;
-    purchaseValid: boolean;
-    purchaseStatus: string;
-    downloaded: boolean;
+	id: string;
+	title: string;
+	price: string;
+	currency: string;
+	url: string;
+	subtitle: string;
+	purchaseValid: boolean;
+	purchaseStatus: string;
+	downloaded: boolean;
 }
 
 interface User {
-    id: string;
-    username: string;
-    profilePictureURL: string;
+	id: string;
+	username: string;
+	profilePictureURL: string;
 }
 
 interface InvalidateAuthToken {
-    request: PolymartRequest;
-    response: InvalidateAuthTokenResponse;
+	request: PolymartRequest;
+	response: InvalidateAuthTokenResponse;
 }
 
 interface InvalidateAuthTokenResponse {
-    success: boolean;
-    result: {
-        message: string;
-    }
+	success: boolean;
+	result: {
+		message: string;
+	}
 }
 
 interface VerifyAuthToken {
-    request: PolymartRequest;
-    response: VerifyAuthTokenResponse;
+	request: PolymartRequest;
+	response: VerifyAuthTokenResponse;
 }
 
 interface VerifyAuthTokenResponse {
-    success: boolean;
-    result: {
-        success: boolean;
-        message: string;
-        user: {
-            id: string;
-        };
-        expires: number;
-    }
+	success: boolean;
+	result: {
+		success: boolean;
+		message: string;
+		user: {
+			id: string;
+		};
+		expires: number;
+	}
 }
 
 interface AuthorizeUser {
-    request: PolymartRequest;
-    response: AuthorizeUserResponse;
+	request: PolymartRequest;
+	response: AuthorizeUserResponse;
 }
 
 interface AuthorizeUserResponse {
-    success: boolean;
-    result: AuthorizeUserResult;
+	success: boolean;
+	result: AuthorizeUserResult;
 }
 
 interface AuthorizeUserResult {
-    url: string;
-    token: string;
+	url: string;
+	token: string;
 }
 
 interface VerifyUser {
-    request: PolymartRequest;
-    response: VerifyUserResponse;
+	request: PolymartRequest;
+	response: VerifyUserResponse;
 }
 
 interface VerifyUserResponse {
-    success: boolean;
-    result: VerifyUserResult;
+	success: boolean;
+	result: VerifyUserResult;
 }
 
 interface VerifyUserResult {
-    user: {
-        id: string;
-    };
+	user: {
+		id: string;
+	};
 }
 
 interface GenerateUserVerifyURL {
-    request: PolymartRequest;
-    response: GenerateUserVerifyURLResponse;
+	request: PolymartRequest;
+	response: GenerateUserVerifyURLResponse;
 }
 
 interface GenerateUserVerifyURLResponse {
-    success: boolean;
-    result: {
-        url: string;
-    }
+	success: boolean;
+	result: {
+		url: string;
+	}
 }
 
 interface getResourceUserData {
-    request: PolymartRequest;
-    response: getResourceUserDataResponse;
+	request: PolymartRequest;
+	response: getResourceUserDataResponse;
 }
 
 interface getResourceUserDataResponse {
-    success: boolean;
-    resource: ResourceUserData;
-    user: {
-        id: string;
-    };
+	success: boolean;
+	resource: ResourceUserData;
+	user: {
+		id: string;
+	};
 }
 
 interface ResourceUserData {
-    id: string;
-    purchaseValid: boolean;
-    purchaseStatus: string;
+	id: string;
+	purchaseValid: boolean;
+	purchaseStatus: string;
 }
 
 interface PostUpdate {
-    request: PolymartRequest;
-    response: PostUpdateResponse;
+	request: PolymartRequest;
+	response: PostUpdateResponse;
 }
 
 interface PostUpdateResponse {
-    success: boolean;
-    errors: any[];
-    update: Update;
-    resource: {
-        id: number;
-    };
+	success: boolean;
+	errors: any[];
+	update: Update;
+	resource: {
+		id: number;
+	};
 }
 
 interface Update {
-    id: number;
-    version: string;
-    beta: boolean;
-    snapshot: boolean;
+	id: number;
+	version: string;
+	beta: boolean;
+	snapshot: boolean;
 }
 
 interface getResourceInfo {
-    request: PolymartRequest;
-    response: getResourceInfoResponse;
+	request: PolymartRequest;
+	response: getResourceInfoResponse;
 }
 
 interface getResourceInfoResponse {
-    success: boolean;
-    resource: ResourceInfo;
+	success: boolean;
+	resource: ResourceInfo;
 }
 
 interface ResourceInfo {
-    id: string;
-    title: string;
-    subtitle: string;
-    price: string;
-    currency: string;
-    updates: {
-        latest: Latest;
-    },
-    owner: ResourceOwner,
-    themeColorLight: string,
-    themeColorDark: string
+	id: string;
+	title: string;
+	subtitle: string;
+	price: string;
+	currency: string;
+	updates: {
+		latest: Latest;
+	},
+	owner: ResourceOwner,
+	themeColorLight: string,
+	themeColorDark: string
 }
 
 interface Latest {
-    id: string;
-    version: string;
-    title: string;
-    description: string;
-    time: string;
-    snapshot: string;
-    beta: string;
+	id: string;
+	version: string;
+	title: string;
+	description: string;
+	time: string;
+	snapshot: string;
+	beta: string;
 }
 
 interface RequestUpdateURL {
-    request: PolymartRequest;
-    response: RequestUpdateURLResponse;
+	request: PolymartRequest;
+	response: RequestUpdateURLResponse;
 }
 
 interface RequestUpdateURLResponse {
-    success: boolean;
-    result: getDownloadURLResult;
+	success: boolean;
+	result: getDownloadURLResult;
 }
 
 interface VerifyPurchase {
-    request: PolymartRequest;
-    response: {
-        success: boolean;
-    }
+	request: PolymartRequest;
+	response: {
+		success: boolean;
+	}
 }
 
 interface SearchParams {
-    query?: string,
-    sort?: string,
-    premium?: boolean,
-    start?: number,
-    limit?: number,
-    referrer?: string
+	query?: string,
+	sort?: string,
+	premium?: boolean,
+	start?: number,
+	limit?: number,
+	referrer?: string
 }
 
 interface Search {
-    request: PolymartRequest;
-    response: SearchResponse;
+	request: PolymartRequest;
+	response: SearchResponse;
 }
 
 interface SearchResponse {
-    success: boolean;
-    result_count: number;
-    more: boolean;
-    next_start: number;
-    total: number;
-    remaining: number;
-    result: ResultElement[];
+	success: boolean;
+	result_count: number;
+	more: boolean;
+	next_start: number;
+	total: number;
+	remaining: number;
+	result: ResultElement[];
 }
 
 interface ResourceOwner {
-    type: string,
-    id: number,
-    name: string,
-    url: string
+	type: string,
+	id: number,
+	name: string,
+	url: string
 }
 
 interface ResultElement {
-    id: string;
-    url: string;
-    owner: ResourceOwner;
-    team: null;
-    price: string;
-    currency: string;
-    title: string;
-    subtitle: string;
-    version: string;
-    creationTime: string;
-    lastUpdateTime: string;
-    supportedServerSoftware: null;
-    supportedLanguages: string;
-    supportedMinecraftVersions: string;
-    donationLink: null;
-    sourceCodeLink: null;
-    thumbnailURL: string;
-    headerURL: string;
-    themeColorLight: string,
-    themeColorDark: string,
-    canDownload: boolean;
+	id: string;
+	url: string;
+	owner: ResourceOwner;
+	team: null;
+	price: string;
+	currency: string;
+	title: string;
+	subtitle: string;
+	version: string;
+	creationTime: string;
+	lastUpdateTime: string;
+	supportedServerSoftware: null;
+	supportedLanguages: string;
+	supportedMinecraftVersions: string;
+	donationLink: null;
+	sourceCodeLink: null;
+	thumbnailURL: string;
+	headerURL: string;
+	themeColorLight: string,
+	themeColorDark: string,
+	canDownload: boolean;
 }

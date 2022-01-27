@@ -7,10 +7,10 @@ import { User } from '@models/User';
 import Logger from '@util/Logger';
 import { bot } from '@root/src/index';
 
-export class PingCommand extends Command {
+export class MigrateContextCommand extends Command {
 	constructor(creator: SlashCreator) {
 		super(creator, {
-            type: ApplicationCommandType.USER,
+			type: ApplicationCommandType.USER,
 			name: 'Migrate to Polymart',
 		})
 		this.filePath = __filename;
@@ -19,20 +19,31 @@ export class PingCommand extends Command {
 	async run(ctx: CommandContext) {
 		await ctx.defer(true);
 		const manager = await Database.getInstance().getManager();
-        const config = await manager.findOne(Config, ctx.guildID);
-
-        if (!config) return { content: 'Bot has not been configured correctly.', ephemeral: true }
-
+		const config = await manager.findOne(Config, ctx.guildID);
+		
+		if (!config) return { content: 'Bot has not been configured correctly.', ephemeral: true }
+		
 		let targetUserPolymartId = (await manager.findOne(User, {Id: ctx.targetUser!.id}))?.polymartUserId
 		if (!targetUserPolymartId) {
 			await ctx.send(`Selected User (${ctx.targetUser?.username}#${ctx.targetUser?.discriminator}) does not have an account linked!`, { components: [] })
 			return;
 		}
-
-		const roles = (await bot.getMember('452518336627081236', ctx.targetUser!.id)!)!.roles;
-
-		let resources = (await config.resources).filter(item => !roles.includes(item.discordRole))
-
+		
+		
+		let pan = ((await Promise.all(((await API.getUserData(targetUserPolymartId!, config.apiKey))?.resources!.map(async item => {
+			if (!['Free', 'None'].includes(item.purchaseStatus)) {
+				if ((await config.resources).find(r => r.Id === item.id)) {
+					return item.id
+				}
+			}
+		}))!)).filter(item => item !== undefined));
+		
+		let resources = (await config.resources).filter(item => !pan.includes(item.Id))
+		// const roles = (await bot.getMember('452518336627081236', ctx.targetUser!.id)!)!.roles;
+		// const UserResources = (await API.getUserData(targetUserPolymartId!, config.apiKey))?.resources.map(item => item.id)!;
+		
+		// let resources = (await config.resources).filter(item => !UserResources.includes(item.discordRole))
+		
 		let options = await Promise.all(resources.map(async item => {
 			const resource = await API.getResourceInfo(parseInt(item.Id), config.apiKey);
 			return {
@@ -41,7 +52,7 @@ export class PingCommand extends Command {
 				description: `${resource?.subtitle}`
 			};
 		}));
-
+		
 		await ctx.send({
 			content: '​​​',
 			flags: 64,
@@ -59,9 +70,9 @@ export class PingCommand extends Command {
 				}]
 			}]
 		})
-
-
-
+		
+		
+		
 		ctx.registerComponent('migrate', async (selectCtx) => {
 			let targetUserId = (await manager.findOne(User, {Id: ctx.targetUser!.id}))?.polymartUserId
 			if (!targetUserId) {
@@ -78,7 +89,7 @@ export class PingCommand extends Command {
 					}
 				}
 			})
-			selectCtx.editParent(`Migrated User for ${items.map(async items => (await items)?.success ? (await items)?.item : '').join(', ')}`)
+			selectCtx.editParent(`Migrated User for ${(await Promise.all(items.map(async items => (await items)?.success ? (await items)?.item : ''))).join(', ')}`)
 		});
 	}
 }

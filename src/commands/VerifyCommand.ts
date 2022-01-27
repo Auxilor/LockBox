@@ -7,7 +7,7 @@ import { User } from '../models/User';
 import { Config } from '../models/Config';
 import Logger from '@util/Logger';
 
-export class PingCommand extends Command {
+export class VerifyCommand extends Command {
 	constructor(creator: SlashCreator) {
 		super(creator, {
 			name: 'verify',

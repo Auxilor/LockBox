@@ -59,8 +59,8 @@ export default class Lockbox extends Eris.Client {
         creator.on('debug', (msg) => Logger.debug(`[DEBUG]: ${msg}`));
         creator.on('warn', (msg) => Logger.warn(`[WARN]: ${msg}`));
         creator.on('error', (msg) => Logger.error(`[ERROR]: ${msg}`));
-        creator.on('rawREST', (req) => Logger.debug(`data: ${req.method} => ${req.url} `))
-        creator.on('rawInteraction', (interaction) => Logger.debug(`RawInteraction: ${interaction.id} | type: ${interaction.type} | ${interaction.token}`))
+        //creator.on('rawREST', (req) => Logger.debug(`data: ${req.method} => ${req.url} `))
+        //creator.on('rawInteraction', (interaction) => Logger.debug(`RawInteraction: ${interaction.id} | type: ${interaction.type} | ${interaction.token}`))
         creator.on('unknownInteraction', (interaction) => Logger.warn(`Unknown Interaction: ${interaction}`))
         creator.on('commandRun', (cmd, _, ctx) => Logger.info(`${ctx.member!.user.username}#${ctx.member!.user.discriminator} (${ctx.member!.id}) ran command ${cmd.commandName}`));
         creator.on('commandRegister', (cmd) => Logger.debug(`Registered command ${cmd.commandName}`));

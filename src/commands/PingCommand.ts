@@ -10,11 +10,11 @@ export class PingCommand extends Command {
 		})
 		this.filePath = __filename;
 	}
-
+	
 	async run(ctx: CommandContext) {
 		return {
 			content: `Pong!\nLatency: ${(bot.shards.map(v => v.latency).reduce((a, b) => a+b, 0)/bot.shards.size)}ms.`, ephemeral: true
 		}
 	}
-
+	
 }
